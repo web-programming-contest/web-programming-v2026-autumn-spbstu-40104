@@ -3,5 +3,33 @@
 }
 
 body {
-  margin: 0;
+  background-color: #ffffff;
+}
+
+.registration-form {
+  color: #000000;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field input[type='text'],
+.form-field input[type='email'],
+.form-field input[type='password'],
+.form-field input[type='date'],
+.form-field select {
+  width: 100%;
+  padding: 10px;
+}
+
+.submit-button {
+  background-color: #008000;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
 }

@@ -6,10 +6,63 @@
     <title>Лабораторная работа 1</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <main>
       <h1>Лабораторная работа 1</h1>
-      <p>Замените этот текст разметкой своего варианта.</p>
+      <form class="registration-form">
+        <div class="form-field">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-field">
+          <label for="surname">Фамилия</label>
+          <input type="text" id="surname" name="surname" required />
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-field">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="form-field">
+          <label for="confirm-password">Подтверждение пароля</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm_password"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="birth-date">Дата рождения</label>
+          <input type="date" id="birth-date" name="birth_date" required />
+        </div>
+
+        <div class="form-field">
+          <label for="country">Страна</label>
+          <select id="country" name="country" required>
+            <option value="text" disabled selected>Выберите страну</option>
+            <option type="text" value="ru">Россия</option>
+            <option type="text" value="by">Беларусь</option>
+            <option type="text" value="other">Другая</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <input type="checkbox" id="agreement" name="agreement" required />
+          <label for="agreement">Согласен с условиями</label>
+        </div>
+
+        <button type="submit" class="submit-button">Зарегистрироваться</button>
+      </form>
     </main>
   </body>
 </html>
