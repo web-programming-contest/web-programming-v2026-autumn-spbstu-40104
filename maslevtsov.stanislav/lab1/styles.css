@@ -3,11 +3,12 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .registration-form {
-  color: #000000;
+  background-color: #fff;
+  color: #000;
   max-width: 500px;
   margin: 10px auto;
 }
@@ -27,7 +28,7 @@ body {
 
 .submit-button {
   background-color: #008000;
-  color: #ffffff;
+  color: #fff;
   border: none;
   padding: 10px;
   font-size: 16px;
