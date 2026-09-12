@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.card h3 {
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card p {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.cards-list {
+  display: flex;
+  gap: 20px;
+}
+
+.card img {
+  width: 200px;
+  height: 150px;
+}
+
+.card * {
+  padding: 10px;
+}
