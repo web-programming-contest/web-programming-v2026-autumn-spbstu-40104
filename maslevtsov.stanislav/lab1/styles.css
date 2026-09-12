@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.registration-form {
+  background-color: #fff;
+  color: #000;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field input[type='text'],
+.form-field input[type='email'],
+.form-field input[type='password'],
+.form-field input[type='date'],
+.form-field select {
+  width: 100%;
+  padding: 10px;
+}
+
+.submit-button {
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
