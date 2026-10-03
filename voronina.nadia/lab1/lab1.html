@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+
+    <style>
+        .registration-form {
+            width: 500px;
+
+            display: grid;
+            grid-template-columns: 150px 1fr;
+
+            gap: 15px 20px;
+            align-items: start;
+        }
+
+        .registration-form > label {
+            text-align: right;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        button {
+            grid-column: 2;
+            width: 120px;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Регистрация</h1>
+
+    <form class="registration-form">
+
+        <label for="firstName">Имя:</label>
+        <input
+            type="text"
+            id="firstName"
+            name="firstName"
+        >
+
+        <label for="lastName">Фамилия:</label>
+        <input
+            type="text"
+            id="lastName"
+            name="lastName"
+        >
+
+        <label>Пол:</label>
+        <div class="options">
+            <label>
+                <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                >
+                Мужской
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                >
+                Женский
+            </label>
+        </div>
+
+        <label>Владение языками:</label>
+        <div class="options">
+            <label>
+                <input
+                    type="checkbox"
+                    name="languages"
+                    value="russian"
+                >
+                Русский
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    name="languages"
+                    value="english"
+                >
+                Английский
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    name="languages"
+                    value="german"
+                >
+                Немецкий
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    name="languages"
+                    value="french"
+                >
+                Французский
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    name="languages"
+                    value="spanish"
+                >
+                Испанский
+            </label>
+        </div>
+
+        <button type="submit">Регистрация</button>
+
+    </form>
+
+</body>
+</html>
