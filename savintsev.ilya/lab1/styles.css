@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #006a4e;
+  width: 100%;
+  aspect-ratio: 10 / 6;
+}
+
+.circle {
+  position: absolute;
+  background-color: #f42a41;
+  width: 38%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
