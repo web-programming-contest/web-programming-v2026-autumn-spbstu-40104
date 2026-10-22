@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 4 — Каталог фильмов</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Каталог фильмов</h1>
+      <form id="movie-form" class="movie-form" data-testid="entity-form">
+        <h2>Новый фильм</h2>
+        <div class="form-fields">
+          <label
+            >Название фильма
+            <input id="movie-title" name="title" type="text" required />
+          </label>
+          <label
+            >Режиссёр
+            <input id="movie-director" name="director" type="text" required />
+          </label>
+          <button type="submit">Добавить фильм</button>
+        </div>
+      </form>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <section
+        id="movie-list"
+        class="movie-list"
+        data-testid="entity-list"
+        aria-label="Список фильмов"
+      ></section>
+    </main>
+  </body>
+</html>
