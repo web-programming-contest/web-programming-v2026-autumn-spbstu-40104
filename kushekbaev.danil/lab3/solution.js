@@ -1,6 +1,6 @@
 export function findMedian(arr) {
   if (arr.length === 0) {
-    return null; 
+    return null;
   }
 
   const sorted = [...arr].sort((a, b) => a - b);
