@@ -8,7 +8,9 @@ export function findEquilibriumIndex(arr) {
     right += el;
   }
   for (let i = 0; i < arr.length; ++i) {
-    left += i === 0 ? 0 : arr[i - 1];
+    if (i !== 0) {
+      left += arr[i - 1];
+    }
     right -= arr[i];
     if (left === right) {
       return i;
