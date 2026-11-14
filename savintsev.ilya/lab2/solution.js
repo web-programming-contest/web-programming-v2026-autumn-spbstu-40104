@@ -2,7 +2,7 @@ export function findLongestPalindrome(str) {
   if (typeof str !== 'string' && !(str instanceof String)) {
     throw new TypeError('findLongestPalindrome uses only string');
   }
-str = str.valueOf(); 
+  str = str.valueOf();
   const strlen = str.length;
   if (strlen < 2) {
     return '';
