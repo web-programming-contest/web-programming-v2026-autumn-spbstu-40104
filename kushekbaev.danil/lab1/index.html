@@ -8,55 +8,50 @@
   </head>
   <body>
     <main class="page">
-      <form class="registration-form" action="#" method="post" novalidate>
+      <!-- Перенесли form-grid прямо на form -->
+      <form class="registration-form form-grid" action="#" method="post" novalidate>
         <h1 class="form-title">Регистрация</h1>
 
-        <div class="form-grid">
-          <label for="firstName">Имя</label>
-          <input type="text" id="firstName" name="firstName" required />
+        <label for="firstName">Имя</label>
+        <input type="text" id="firstName" name="firstName" required />
 
-          <label for="lastName">Фамилия</label>
-          <input type="text" id="lastName" name="lastName" required />
+        <label for="lastName">Фамилия</label>
+        <input type="text" id="lastName" name="lastName" required />
 
-          <span class="field-label" id="gender-label">Пол</span>
-          <div class="radio-group" role="group" aria-labelledby="gender-label">
-            <label class="option">
-              <input type="radio" name="gender" value="male" required />
-              Мужской
-            </label>
-            <label class="option">
-              <input type="radio" name="gender" value="female" />
-              Женский
-            </label>
-          </div>
+        <span class="field-label" id="gender-label">Пол</span>
+        <div class="radio-group" role="group" aria-labelledby="gender-label">
+          <label class="option">
+            <input type="radio" name="gender" value="male" required />
+            Мужской
+          </label>
+          <label class="option">
+            <input type="radio" name="gender" value="female" />
+            Женский
+          </label>
+        </div>
 
-          <span class="field-label" id="lang-label">Владение языками</span>
-          <div
-            class="checkbox-group"
-            role="group"
-            aria-labelledby="lang-label"
-          >
-            <label class="option">
-              <input type="checkbox" name="languages[]" value="ru" />
-              Русский
-            </label>
-            <label class="option">
-              <input type="checkbox" name="languages[]" value="ef" />
-              Эльфийский
-            </label>
-            <label class="option">
-              <input type="checkbox" name="languages[]" value="nv" />
-              Навахо
-            </label>
-            <label class="option">
-              <input type="checkbox" name="languages[]" value="gn" />
-              Гуарани
-            </label>
-            <label class="option">
-              <input type="checkbox" name="languages[]" value="iu" />
-              Инуитский
-            </label>
-          </div>
+        <span class="field-label" id="lang-label">Владение языками</span>
+        <div class="checkbox-group" role="group" aria-labelledby="lang-label">
+          <label class="option">
+            <input type="checkbox" name="languages[]" value="ru" />
+            Русский
+          </label>
+          <label class="option">
+            <input type="checkbox" name="languages[]" value="ef" />
+            Эльфийский
+          </label>
+          <label class="option">
+            <input type="checkbox" name="languages[]" value="nv" />
+            Навахо
+          </label>
+          <label class="option">
+            <input type="checkbox" name="languages[]" value="gn" />
+            Гуарани
+          </label>
+          <label class="option">
+            <input type="checkbox" name="languages[]" value="iu" />
+            Инуитский
+          </label>
         </div>
 
         <button type="submit" class="submit-btn">Зарегистрироваться</button>

@@ -27,26 +27,24 @@ body {
 }
 
 .registration-form {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px 20px;
+  align-items: center;
   width: 100%;
   max-width: 520px;
   background-color: #fff;
   padding: 28px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
 .form-title {
+  grid-column: 1 / -1;
   margin: 0 0 20px;
   font-size: 1.5rem;
   text-align: center;
   color: #222;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 16px 20px;
-  align-items: center;
 }
 
 .form-grid > label,
@@ -55,7 +53,13 @@ body {
   color: #555;
 }
 
-.form-grid input[type="text"] {
+.registration-form > label,
+.registration-form > .field-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.registration-form input[type="text"] {
   width: 100%;
   padding: 8px 10px;
   font-size: 14px;
@@ -66,14 +70,14 @@ body {
     box-shadow 0.2s;
 }
 
-.form-grid input[type="text"]:hover {
+.registration-form input[type="text"]:hover {
   border-color: #9bb8e0;
 }
 
-.form-grid input[type="text"]:focus {
+.registration-form input[type="text"]:focus {
   outline: none;
   border-color: #4a90e2;
-  box-shadow: 0 0 0 3px rgb(74 144 226 / 25%);
+  box-shadow: 0 0 0 3px rgb(74 144 226 / 0.25);
 }
 
 .radio-group,
@@ -107,6 +111,7 @@ body {
 }
 
 .submit-btn {
+  grid-column: 1 / -1;
   display: block;
   width: 100%;
   margin-top: 24px;
@@ -144,13 +149,13 @@ body {
 }
 
 @media (width <= 480px) {
-  .form-grid {
+  .registration-form {
     grid-template-columns: 1fr;
     gap: 6px;
   }
 
-  .form-grid > .field-label,
-  .form-grid > label {
+  .registration-form > .field-label,
+  .registration-form > label {
     margin-top: 8px;
   }
 }
