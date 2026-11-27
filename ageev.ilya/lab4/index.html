@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Управление заказами</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Управление заказами</h1>
+      <section class="panel">
+        <h2>Новый заказ</h2>
+        <form data-testid="entity-form" class="fields">
+          <label>
+            ID заказа
+            <input name="orderId" type="number" min="1" step="1" required />
+          </label>
+          <label>
+            Статус
+            <select name="status">
+              <option value="new">Новый</option>
+              <option value="processing">В обработке</option>
+              <option value="completed">Выполнен</option>
+              <option value="cancelled">Отменён</option>
+            </select>
+          </label>
+          <button type="submit">Добавить заказ</button>
+        </form>
+        <p class="notice" role="status"></p>
+      </section>
+      <section>
+        <h2>Список заказов</h2>
+        <div data-testid="entity-list" class="orders"></div>
+      </section>
+      <section class="panel">
+        <h2>Анализ заказов</h2>
+        <label>
+          Операция
+          <select class="operation">
+            <option value="status">Группировка по статусу</option>
+            <option value="items">Уникальные товары</option>
+            <option value="total">Группировка по сумме</option>
+            <option value="find-item">Поиск по товару</option>
+            <option value="find-status">Поиск по статусу</option>
+          </select>
+        </label>
+        <label class="query-field" hidden>
+          Название товара
+          <input class="query" type="text" />
+        </label>
+        <label class="status-field" hidden>
+          Статус заказа
+          <select class="status-query">
+            <option value="new">Новый</option>
+            <option value="processing">В обработке</option>
+            <option value="completed">Выполнен</option>
+            <option value="cancelled">Отменён</option>
+          </select>
+        </label>
+        <pre class="result"></pre>
+      </section>
+    </main>
+  </body>
+</html>
