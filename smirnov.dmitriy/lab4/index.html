@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Список мероприятий</h1>
+
+      <section>
+        <h2>Добавить мероприятие</h2>
+        <form data-testid="entity-form">
+          <label>ID <input type="number" name="id" min="1" required /></label>
+          <label>Название <input type="text" name="title" required /></label>
+          <label>Дата <input type="date" name="date" required /></label>
+          <button type="submit">Добавить мероприятие</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Поиск и фильтр</h2>
+        <form data-testid="participant-search-form">
+          <label
+            >Участник
+            <input type="text" name="participant" placeholder="Имя участника"
+          /></label>
+          <button type="submit">Найти мероприятия</button>
+          <button type="button" data-testid="reset-filter">Сбросить</button>
+        </form>
+        <form data-testid="month-search-form">
+          <label
+            >Месяц
+            <select name="month">
+              <option value="">Выбери месяц</option>
+              <option value="1">Январь</option>
+              <option value="2">Февраль</option>
+              <option value="3">Март</option>
+              <option value="4">Апрель</option>
+              <option value="5">Май</option>
+              <option value="6">Июнь</option>
+              <option value="7">Июль</option>
+              <option value="8">Август</option>
+              <option value="9">Сентябрь</option>
+              <option value="10">Октябрь</option>
+              <option value="11">Ноябрь</option>
+              <option value="12">Декабрь</option>
+            </select>
+          </label>
+          <button type="submit">Показать по месяцу</button>
+        </form>
+        <p data-testid="filter-status" aria-live="polite">
+          Показаны все мероприятия
+        </p>
+      </section>
+
+      <section>
+        <h2>Мероприятия</h2>
+        <div data-testid="entity-list"></div>
+      </section>
+
+      <section>
+        <h2>Информация о списке</h2>
+        <p>
+          Уникальные участники:
+          <span data-testid="unique-participants">Нет</span>
+        </p>
+        <h3>Группировка по дате</h3>
+        <ul data-testid="group-by-date"></ul>
+        <h3>Группировка по количеству участников</h3>
+        <ul data-testid="group-by-count"></ul>
+      </section>
+
+      <p data-testid="message" aria-live="polite"></p>
+    </main>
+
+    <template id="event-template">
+      <article data-testid="entity-card" class="event">
+        <h3 class="event-title">Название мероприятия</h3>
+        <p>ID: <span class="event-id"></span></p>
+        <p>Дата: <span class="event-date"></span></p>
+        <p>Количество участников: <span class="event-count"></span></p>
+        <h4>Участники</h4>
+        <ul class="participants"></ul>
+        <form class="participant-form">
+          <label
+            >Имя участника <input type="text" name="participant" required
+          /></label>
+          <button type="submit">Добавить участника</button>
+        </form>
+        <button type="button" data-testid="delete-entity">
+          Удалить мероприятие
+        </button>
+      </article>
+    </template>
+  </body>
+</html>
