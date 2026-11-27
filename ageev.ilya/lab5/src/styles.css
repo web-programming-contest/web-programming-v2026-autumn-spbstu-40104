@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  color: #202b3c;
+  font:
+    16px/1.5 system-ui,
+    sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 30px;
+}
+
+h2 {
+  margin: 12px 0 8px;
+  font-size: 20px;
+}
+
+.intro {
+  margin: 0 0 24px;
+  color: #59677a;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 16px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #dce3ed;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.cover {
+  width: 100%;
+  height: 245px;
+  border-radius: 6px;
+  background: #f1f3f7;
+  object-fit: contain;
+}
+
+.stars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.star {
+  padding: 0 3px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #a56d08;
+  font: inherit;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.star:hover {
+  background: #fff2cb;
+}
+
+.star:focus-visible {
+  outline: 2px solid #1756a4;
+  outline-offset: 2px;
+}
+
+.rating-value {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.description {
+  flex: 1;
+}
+
+.price {
+  margin: 8px 0 0;
+  font-size: 21px;
+  font-weight: bold;
+}
