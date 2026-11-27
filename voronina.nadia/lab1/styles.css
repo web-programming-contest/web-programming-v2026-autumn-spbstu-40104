@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #202124;
+  background: #fff;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.registration-card {
+  width: min(100%, 620px);
+  padding: 32px;
+  background: #feabd9;
+  border: 1px solid #3977c2;
+  border-radius: 12px;
+}
+
+.registration-title {
+  margin: 0 0 28px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.registration-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 24px;
+  align-items: start;
+  width: 400px;
+  max-width: 100%;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.form-label {
+  padding-top: 9px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.text-input {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 11px;
+  font: inherit;
+  border: 1px solid #9e4ccb;
+  border-radius: 6px;
+}
+
+.options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.option {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.option input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #9e4ccb;
+}
+
+.option label {
+  cursor: pointer;
+}
+
+.submit-button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: #0056ff;
+  border: 0;
+  border-radius: 6px;
+}
+
+.submit-button:hover {
+  background: #417ffb;
+}
+
+@media (width <= 560px) {
+  .page {
+    padding: 20px 10px;
+  }
+
+  .registration-card {
+    padding: 15px;
+  }
+
+  .registration-form {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 10px;
+  }
+}

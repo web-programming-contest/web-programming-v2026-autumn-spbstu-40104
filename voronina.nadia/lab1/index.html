@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="registration-card">
+        <h1 class="registration-title">Регистрация</h1>
+
+        <form class="registration-form" action="#" method="post">
+          <label class="form-label" for="first-name">Имя:</label>
+          <input
+            class="text-input"
+            id="first-name"
+            name="firstName"
+            type="text"
+            autocomplete="given-name"
+          />
+
+          <label class="form-label" for="last-name">Фамилия:</label>
+          <input
+            class="text-input"
+            id="last-name"
+            name="lastName"
+            type="text"
+            autocomplete="family-name"
+          />
+
+          <div class="form-label">Пол:</div>
+          <div class="options-group">
+            <div class="option">
+              <input id="gender-male" name="gender" type="radio" value="male" />
+              <label for="gender-male">Мужской</label>
+            </div>
+            <div class="option">
+              <input
+                id="gender-female"
+                name="gender"
+                type="radio"
+                value="female"
+              />
+              <label for="gender-female">Женский</label>
+            </div>
+          </div>
+
+          <div class="form-label">Владение языками:</div>
+          <div class="options-group">
+            <div class="option">
+              <input
+                id="language-russian"
+                name="languages[]"
+                type="checkbox"
+                value="russian"
+              />
+              <label for="language-russian">Русский</label>
+            </div>
+            <div class="option">
+              <input
+                id="language-english"
+                name="languages[]"
+                type="checkbox"
+                value="english"
+              />
+              <label for="language-english">Английский</label>
+            </div>
+            <div class="option">
+              <input
+                id="language-german"
+                name="languages[]"
+                type="checkbox"
+                value="german"
+              />
+              <label for="language-german">Немецкий</label>
+            </div>
+            <div class="option">
+              <input
+                id="language-french"
+                name="languages[]"
+                type="checkbox"
+                value="french"
+              />
+              <label for="language-french">Французский</label>
+            </div>
+            <div class="option">
+              <input
+                id="language-spanish"
+                name="languages[]"
+                type="checkbox"
+                value="spanish"
+              />
+              <label for="language-spanish">Испанский</label>
+            </div>
+          </div>
+
+          <button class="submit-button" type="submit">
+            Зарегистрироваться
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
