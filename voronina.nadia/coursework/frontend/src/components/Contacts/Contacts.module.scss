@@ -1,0 +1,56 @@
+@use '../../styles/variables' as *;
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+.title {
+  font-size: $heading-24;
+  font-weight: $font-weight-semibold;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: $grid-gap;
+
+  font-style: normal;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+
+  color: $color-text;
+
+  font-size: $heading-20;
+  font-weight: $font-weight-medium;
+  line-height: 24px;
+
+  svg,
+  img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+}
+
+a.item {
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:active {
+    color: $color-blue-dark;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-blue-light;
+    outline-offset: 4px;
+    border-radius: $radius-sm;
+  }
+}

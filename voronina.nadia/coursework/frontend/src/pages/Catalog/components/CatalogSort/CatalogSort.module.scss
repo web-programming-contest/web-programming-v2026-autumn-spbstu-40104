@@ -1,0 +1,36 @@
+@use '../../../../styles/variables' as *;
+
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+
+  span {
+    font-size: 16px;
+  }
+
+  select {
+    font: inherit;
+    padding: 8px 12px;
+    border: 1px solid $color-gray;
+    border-radius: 8px;
+    background: $color-white;
+    cursor: pointer;
+  }
+
+  button {
+    width: 36px;
+    height: 36px;
+    border: 1px solid $color-gray;
+    border-radius: 8px;
+    background: $color-white;
+    color: $color-blue;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: $color-background;
+    }
+  }
+}

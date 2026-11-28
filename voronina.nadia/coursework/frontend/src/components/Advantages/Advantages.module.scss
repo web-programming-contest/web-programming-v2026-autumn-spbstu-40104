@@ -1,0 +1,61 @@
+@use '../../styles/variables' as *;
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+.title {
+  font-size: $heading-24;
+  font-weight: $font-weight-semibold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: $grid-gap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: $spacing-md;
+
+  min-height: 156px;
+  padding: $spacing-xl;
+
+  background-color: $color-background;
+  border-radius: $radius-xl;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.delivery {
+  color: $color-pink;
+}
+
+.refund {
+  color: $color-blue;
+}
+
+.original {
+  color: $color-green;
+}
+
+.cardTitle {
+  font-size: $heading-20;
+  font-weight: $font-weight-medium;
+  line-height: 1.3;
+}

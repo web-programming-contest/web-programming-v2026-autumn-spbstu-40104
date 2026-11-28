@@ -1,0 +1,108 @@
+@use '../../styles/variables' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: $spacing-xs;
+
+  width: 240px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  color: $color-text;
+  cursor: pointer;
+}
+
+.required {
+  margin-left: $spacing-xs;
+  color: $color-pink;
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  height: $control-height;
+  padding: 12px 16px;
+
+  border: 1px solid transparent;
+  border-radius: $radius-md;
+
+  background-color: $color-gray;
+  color: $color-text;
+
+  font-family: $font-family;
+  font-size: $font-size-lg;
+  line-height: 24px;
+
+  outline: none;
+
+  &::placeholder {
+    color: $color-text-placeholder;
+    opacity: 1;
+  }
+
+  &:hover:not(:disabled) {
+    border-color: $color-gray-blue;
+  }
+
+  &:focus {
+    border-color: $color-blue-light;
+    background-color: $color-background;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-blue-light;
+  }
+
+  &:disabled {
+    background-color: $color-background;
+    color: $color-text-placeholder;
+    cursor: not-allowed;
+  }
+}
+
+.message {
+  font-size: $font-size-sm;
+  line-height: 16px;
+  color: $color-text-secondary;
+}
+
+.wrapper:focus-within:not(.error) {
+  .label {
+    color: $color-blue;
+  }
+}
+
+.error {
+  .input {
+    border-color: $color-pink;
+
+    &:hover,
+    &:focus {
+      border-color: $color-pink;
+    }
+
+    &:focus-visible {
+      outline-color: $color-pink;
+    }
+  }
+
+  .message {
+    color: $color-pink;
+  }
+}
+
+.disabled {
+  .label,
+  .required {
+    color: $color-text-placeholder;
+    cursor: not-allowed;
+  }
+}

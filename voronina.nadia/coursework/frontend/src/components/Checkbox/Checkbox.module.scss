@@ -1,0 +1,88 @@
+@use '../../styles/variables' as *;
+
+.wrapper {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+
+  width: fit-content;
+
+  cursor: pointer;
+
+  &:hover:not(.disabled) {
+    background-color: $color-background;
+    border-radius: $radius-sm;
+  }
+}
+
+.input {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  margin: 0;
+  opacity: 0;
+
+  cursor: inherit;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+
+  background-color: $color-gray;
+  border-radius: $radius-sm;
+
+  &::after {
+    content: '';
+
+    width: 6px;
+    height: 11px;
+
+    border: solid $color-white;
+    border-width: 0 2px 2px 0;
+
+    transform: translateY(-1px) rotate(45deg);
+
+    opacity: 0;
+  }
+}
+
+.input:checked + .mark {
+  background-color: $color-blue;
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.input:focus-visible + .mark {
+  outline: 2px solid $color-blue-light;
+  outline-offset: 3px;
+}
+
+.label {
+  font-size: $font-size-md;
+  color: $color-text;
+}
+
+.disabled {
+  cursor: not-allowed;
+
+  .label {
+    color: $color-text-placeholder;
+  }
+
+  .mark {
+    opacity: 0.5;
+  }
+}

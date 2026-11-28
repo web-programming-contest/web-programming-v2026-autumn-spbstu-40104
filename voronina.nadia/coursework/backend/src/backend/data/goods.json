@@ -1,0 +1,518 @@
+[
+  {
+    "id": 1,
+    "name": "Внешний аккумулятор 10000mAh, белый",
+    "price": 1990,
+    "rating": 4.7,
+    "category": "Внешние аккумуляторы",
+    "color": "Белый",
+    "image": "/images/goods/image_1.png",
+    "isNew": false,
+    "isHit": true,
+    "createdAt": "2024-03-01",
+    "description": "Портативный аккумулятор для подзарядки гаджетов.",
+    "specifications": {
+      "Ёмкость": "10000 мА·ч"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Внешний аккумулятор 10000mAh, черный",
+    "price": 1990,
+    "rating": 4.6,
+    "category": "Внешние аккумуляторы",
+    "color": "Черный",
+    "image": "/images/goods/image_2.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-02",
+    "description": "Портативный аккумулятор для подзарядки гаджетов.",
+    "specifications": {
+      "Ёмкость": "10000 мА·ч"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth гарнитура, черный",
+    "price": 3490,
+    "rating": 4.5,
+    "category": "Наушники и гарнитуры",
+    "color": "Черный",
+    "image": "/images/goods/image_3.png",
+    "isNew": false,
+    "isHit": true,
+    "createdAt": "2024-03-03",
+    "description": "Беспроводная гарнитура для прослушивания аудио.",
+    "specifications": {
+      "Подключение": "Bluetooth"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Bluetooth гарнитура, серый",
+    "price": 3490,
+    "rating": 4.4,
+    "category": "Наушники и гарнитуры",
+    "color": "Серый",
+    "image": "/images/goods/image_4.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-04",
+    "description": "Беспроводная гарнитура для прослушивания аудио.",
+    "specifications": {
+      "Подключение": "Bluetooth"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Беспроводная акустика",
+    "price": 4990,
+    "rating": 4.8,
+    "category": "Портативная акустика",
+    "color": "Черный",
+    "image": "/images/goods/image_5.png",
+    "isNew": false,
+    "isHit": true,
+    "createdAt": "2024-03-05",
+    "description": "Компактная беспроводная колонка для музыки.",
+    "specifications": {
+      "Подключение": "Беспроводное"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Смартфон 256 ГБ фиолетовый",
+    "price": 43999,
+    "rating": 4.2,
+    "category": "Смартфоны",
+    "color": "Фиолетовый",
+    "image": "/images/goods/image_6.png",
+    "isNew": true,
+    "isHit": true,
+    "createdAt": "2024-05-06",
+    "description": "Смартфон с внутренней памятью 256 ГБ.",
+    "specifications": {
+      "Память": "256 ГБ"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Смартфон 256 ГБ черный",
+    "price": 43999,
+    "rating": 4.6,
+    "category": "Смартфоны",
+    "color": "Черный",
+    "image": "/images/goods/image_7.png",
+    "isNew": true,
+    "isHit": false,
+    "createdAt": "2024-05-07",
+    "description": "Смартфон с внутренней памятью 256 ГБ.",
+    "specifications": {
+      "Память": "256 ГБ"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Смартфон 256 ГБ белый",
+    "price": 43999,
+    "rating": 4.5,
+    "category": "Смартфоны",
+    "color": "Белый",
+    "image": "/images/goods/image_8.png",
+    "isNew": true,
+    "isHit": false,
+    "createdAt": "2024-05-08",
+    "description": "Смартфон с внутренней памятью 256 ГБ.",
+    "specifications": {
+      "Память": "256 ГБ"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Часы с GPS трекером черные",
+    "price": 2000,
+    "rating": 4.8,
+    "category": "Умные часы",
+    "color": "Черный",
+    "image": "/images/goods/image_9.png",
+    "isNew": true,
+    "isHit": false,
+    "createdAt": "2024-05-09",
+    "description": "Часы с GPS-трекером.",
+    "specifications": {
+      "Навигация": "GPS"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Часы с GPS трекером синие",
+    "price": 2000,
+    "rating": 4.7,
+    "category": "Умные часы",
+    "color": "Синий",
+    "image": "/images/goods/image_10.png",
+    "isNew": true,
+    "isHit": false,
+    "createdAt": "2024-05-10",
+    "description": "Часы с GPS-трекером.",
+    "specifications": {
+      "Навигация": "GPS"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Фитнес-браслет ASK-B19 зеленый",
+    "price": 2299,
+    "rating": 4.8,
+    "category": "Фитнес-браслеты",
+    "color": "Зеленый",
+    "image": "/images/goods/image_11.png",
+    "isNew": true,
+    "isHit": true,
+    "createdAt": "2024-05-11",
+    "description": "Фитнес-браслет для повседневного использования.",
+    "specifications": {
+      "Модель": "ASK-B19"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Фитнес-браслет ASK-B19 черный",
+    "price": 2299,
+    "rating": 4.6,
+    "category": "Фитнес-браслеты",
+    "color": "Черный",
+    "image": "/images/goods/image_12.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-12",
+    "description": "Фитнес-браслет для повседневного использования.",
+    "specifications": {
+      "Модель": "ASK-B19"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Наушники белые",
+    "price": 3990,
+    "rating": 4.8,
+    "category": "Наушники и гарнитуры",
+    "color": "Белый",
+    "image": "/images/goods/image_13.png",
+    "isNew": true,
+    "isHit": true,
+    "createdAt": "2024-05-13",
+    "description": "Беспроводные наушники с зарядным футляром.",
+    "specifications": {
+      "Конструкция": "Вкладыши"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Наушники синие",
+    "price": 3990,
+    "rating": 4.5,
+    "category": "Наушники и гарнитуры",
+    "color": "Синий",
+    "image": "/images/goods/image_14.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-14",
+    "description": "Беспроводные наушники с зарядным футляром.",
+    "specifications": {
+      "Конструкция": "Вкладыши"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Наушники черные",
+    "price": 3990,
+    "rating": 4.7,
+    "category": "Наушники и гарнитуры",
+    "color": "Черный",
+    "image": "/images/goods/image_15.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-15",
+    "description": "Беспроводные наушники с зарядным футляром.",
+    "specifications": {
+      "Конструкция": "Вкладыши"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Видеокамера для блогера",
+    "price": 27990,
+    "rating": 4.7,
+    "category": "Фото и видео",
+    "color": "Серый",
+    "image": "/images/goods/image_16.png",
+    "isNew": true,
+    "isHit": false,
+    "createdAt": "2024-05-16",
+    "description": "Компактная видеокамера для съемки контента.",
+    "specifications": {
+      "Назначение": "Видеосъёмка"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Микрофон с разъемом Type-C",
+    "price": 1990,
+    "rating": 4.4,
+    "category": "Фото и видео",
+    "color": "Черный",
+    "image": "/images/goods/image_17.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-17",
+    "description": "Микрофон для записи звука на совместимых устройствах.",
+    "specifications": {
+      "Разъём": "Type-C"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Чехол-подвеска силиконовый с карабином, красный",
+    "price": 490,
+    "rating": 4.6,
+    "category": "Аксессуары",
+    "color": "Красный",
+    "image": "/images/goods/image_18.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-18",
+    "description": "Силиконовая подвеска с карабином.",
+    "specifications": {
+      "Материал": "Силикон",
+      "Крепление": "Карабин"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Чехол-подвеска силиконовый с карабином, белый",
+    "price": 490,
+    "rating": 4.5,
+    "category": "Аксессуары",
+    "color": "Белый",
+    "image": "/images/goods/image_19.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-19",
+    "description": "Силиконовая подвеска с карабином.",
+    "specifications": {
+      "Материал": "Силикон",
+      "Крепление": "Карабин"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Чехол-подвеска силиконовый с карабином, серый",
+    "price": 490,
+    "rating": 4.3,
+    "category": "Аксессуары",
+    "color": "Серый",
+    "image": "/images/goods/image_20.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-20",
+    "description": "Силиконовая подвеска с карабином.",
+    "specifications": {
+      "Материал": "Силикон",
+      "Крепление": "Карабин"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Чехол-подвеска силиконовый с карабином, желтый",
+    "price": 490,
+    "rating": 4.7,
+    "category": "Аксессуары",
+    "color": "Желтый",
+    "image": "/images/goods/image_21.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-21",
+    "description": "Силиконовая подвеска с карабином.",
+    "specifications": {
+      "Материал": "Силикон",
+      "Крепление": "Карабин"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Беспроводная акустика, серый",
+    "price": 2990,
+    "rating": 4.4,
+    "category": "Портативная акустика",
+    "color": "Серый",
+    "image": "/images/goods/image_22.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-22",
+    "description": "Беспроводная колонка в необычном корпусе.",
+    "specifications": {
+      "Подключение": "Беспроводное"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Беспроводная акустика, голубой",
+    "price": 2990,
+    "rating": 4.6,
+    "category": "Портативная акустика",
+    "color": "Голубой",
+    "image": "/images/goods/image_23.png",
+    "isNew": true,
+    "isHit": false,
+    "createdAt": "2024-05-23",
+    "description": "Беспроводная колонка в необычном корпусе.",
+    "specifications": {
+      "Подключение": "Беспроводное"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Беспроводная акустика, бежевый",
+    "price": 2990,
+    "rating": 4.7,
+    "category": "Портативная акустика",
+    "color": "Бежевый",
+    "image": "/images/goods/image_24.png",
+    "isNew": false,
+    "isHit": true,
+    "createdAt": "2024-03-24",
+    "description": "Беспроводная колонка в необычном корпусе.",
+    "specifications": {
+      "Подключение": "Беспроводное"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Умная лампа",
+    "price": 1490,
+    "rating": 4.5,
+    "category": "Умный дом",
+    "color": "Белый",
+    "image": "/images/goods/image_25.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-25",
+    "description": "Умная лампа для домашнего освещения.",
+    "specifications": {
+      "Назначение": "Освещение"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Аппаратный ключ аутентификации NFC",
+    "price": 10590,
+    "rating": 5,
+    "category": "Аксессуары",
+    "color": "Черный",
+    "image": "/images/goods/image_26.png",
+    "isNew": false,
+    "isHit": true,
+    "createdAt": "2024-03-26",
+    "description": "Аппаратный ключ для аутентификации.",
+    "specifications": {
+      "Интерфейс": "NFC"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Аппаратный криптокошелек",
+    "price": 12990,
+    "rating": 4.8,
+    "category": "Аксессуары",
+    "color": "Черный",
+    "image": "/images/goods/image_27.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-27",
+    "description": "Аппаратное устройство для хранения криптографических ключей.",
+    "specifications": {
+      "Тип": "Аппаратный кошелёк"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Очки виртуальной реальности, смартфоны до 6,5 дюйма",
+    "price": 2490,
+    "rating": 4.2,
+    "category": "Очки виртуальной реальности",
+    "color": "Черный",
+    "image": "/images/goods/image_28.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-28",
+    "description": "Очки виртуальной реальности для совместимых смартфонов.",
+    "specifications": {
+      "Диагональ смартфона": "До 6,5 дюйма"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Шлем виртуальной реальности 128GB",
+    "price": 49990,
+    "rating": 4.8,
+    "category": "Очки виртуальной реальности",
+    "color": "Белый",
+    "image": "/images/goods/image_29.png",
+    "isNew": false,
+    "isHit": true,
+    "createdAt": "2024-03-01",
+    "description": "Шлем для просмотра контента виртуальной реальности.",
+    "specifications": {
+      "Память": "128 ГБ"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Умный чемодан-скутер серый",
+    "price": 89990,
+    "rating": 4.6,
+    "category": "Электротранспорт",
+    "color": "Серый",
+    "image": "/images/goods/image_30.png",
+    "isNew": true,
+    "isHit": false,
+    "createdAt": "2024-05-02",
+    "description": "Чемодан-скутер для поездок.",
+    "specifications": {
+      "Тип": "Чемодан-скутер"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Умный чемодан-скутер черный",
+    "price": 89990,
+    "rating": 4.7,
+    "category": "Электротранспорт",
+    "color": "Черный",
+    "image": "/images/goods/image_31.png",
+    "isNew": false,
+    "isHit": false,
+    "createdAt": "2024-03-03",
+    "description": "Чемодан-скутер для поездок.",
+    "specifications": {
+      "Тип": "Чемодан-скутер"
+    }
+  },
+  {
+    "id": 32,
+    "name": "Дыхательный тренажер",
+    "price": 5990,
+    "rating": 4.5,
+    "category": "Другие гаджеты",
+    "color": "Розовый",
+    "image": "/images/goods/image_32.png",
+    "isNew": true,
+    "isHit": false,
+    "createdAt": "2024-05-04",
+    "description": "Устройство для дыхательных упражнений.",
+    "specifications": {
+      "Назначение": "Дыхательные упражнения"
+    }
+  }
+]
