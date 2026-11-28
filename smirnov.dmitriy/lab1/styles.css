@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 16px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.flag {
+  position: relative;
+  width: min(450px, 100%);
+  aspect-ratio: 3 / 2;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.flag-circle {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 40%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #bc002d;
+}
