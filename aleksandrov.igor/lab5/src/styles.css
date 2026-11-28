@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: #f0f2f5;
+}
+
+.app {
+  background: white;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.08);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+input[type='number'] {
+  width: 120px;
+  padding: 10px 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+input[type='number']:focus {
+  border-color: #4a90e2;
+}
+
+button {
+  padding: 10px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.time {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
