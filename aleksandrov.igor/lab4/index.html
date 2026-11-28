@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторная работа 4 — Рецепты</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Рецепты</h1>
+
+      <section>
+        <h2>Добавить рецепт</h2>
+        <form data-testid="entity-form">
+          <div>
+            <label for="title">Название</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+
+          <div>
+            <label for="ingredients">Ингредиенты</label>
+            <textarea id="ingredients" name="ingredients" rows="3"></textarea>
+          </div>
+
+          <div>
+            <label for="steps">Шаги</label>
+            <textarea id="steps" name="steps" rows="4"></textarea>
+          </div>
+
+          <button type="submit">Добавить</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Список рецептов</h2>
+        <div data-testid="entity-list"></div>
+      </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

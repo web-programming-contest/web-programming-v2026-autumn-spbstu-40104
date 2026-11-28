@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  padding: 24px 16px;
+  background: #f5f5f7;
+  color: #1a1a1a;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 1.75rem;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+}
+
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+}
+
+form div {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #3b82f6;
+  border-color: #3b82f6;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+}
+
+button:hover {
+  background: #e4e4e4;
+}
+
+button[type='submit'] {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+button[type='submit']:hover {
+  background: #1d4ed8;
+}
+
+[data-testid='entity-list'] {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+[data-testid='entity-card'] {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fafafa;
+}
+
+[data-testid='entity-card'] h3 {
+  margin: 0 0 6px;
+}
+
+[data-testid='entity-card'] p {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+}
+
+[data-testid='entity-card'] div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e5e5;
+}
+
+[data-testid='entity-card'] button {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+}
+
+[data-testid='delete-entity'] {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #b91c1c;
+}
+
+[data-testid='delete-entity']:hover {
+  background: #fecaca;
+}
