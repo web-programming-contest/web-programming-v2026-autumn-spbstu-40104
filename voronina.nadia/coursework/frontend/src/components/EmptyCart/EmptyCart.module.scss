@@ -1,0 +1,72 @@
+@use '../../styles/variables' as *;
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-lg;
+}
+
+.image {
+  width: 150px;
+  height: auto;
+}
+
+.title {
+  font-size: $heading-32;
+  font-weight: $font-weight-semibold;
+}
+
+.description {
+  max-width: 400px;
+
+  font-size: $font-size-lg;
+  line-height: 1.5;
+
+  color: $color-text-secondary;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xl;
+
+  margin-top: $spacing-sm;
+}
+
+.catalogLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: $control-height;
+  padding: 12px 24px;
+
+  background-color: $color-blue;
+  color: $color-white;
+
+  border-radius: $radius-md;
+
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+
+  &:hover {
+    background-color: $color-blue-dark;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-blue-light;
+    outline-offset: 2px;
+  }
+}
+
+.homeLink {
+  color: $color-blue;
+
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+
+  &:hover {
+    color: $color-blue-dark;
+  }
+}

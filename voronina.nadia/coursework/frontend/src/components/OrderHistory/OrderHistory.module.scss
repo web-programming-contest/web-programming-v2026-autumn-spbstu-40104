@@ -1,0 +1,69 @@
+@use '../../styles/variables' as *;
+
+.history {
+  padding: 0 40px;
+
+  background-color: $color-white;
+  border-radius: $radius-md;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.order {
+  display: grid;
+
+  grid-template-columns: 3fr 1.8fr 2.2fr;
+
+  align-items: center;
+  gap: $spacing-md;
+
+  min-height: 64px;
+
+  padding: $spacing-md 0;
+
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+
+  color: $color-text;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-gray;
+  }
+}
+
+.orderNumber {
+  overflow-wrap: anywhere;
+}
+
+.quantity {
+  white-space: nowrap;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-md;
+
+  padding: 40px;
+
+  background-color: $color-white;
+  border-radius: $radius-md;
+
+  p {
+    color: $color-text-secondary;
+  }
+}
+
+.message .error {
+  color: $color-pink-dark;
+}

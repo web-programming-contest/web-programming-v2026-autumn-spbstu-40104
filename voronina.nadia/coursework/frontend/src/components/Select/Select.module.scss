@@ -1,0 +1,137 @@
+@use '../../styles/variables' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+
+  width: 280px;
+  max-width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  color: $color-text;
+}
+
+.required {
+  margin-left: $spacing-xs;
+  color: $color-pink;
+}
+
+.control {
+  position: relative;
+}
+
+.select {
+  appearance: none;
+
+  width: 100%;
+  height: $control-height;
+
+  padding: 12px 40px 12px 16px;
+
+  border: 1px solid transparent;
+  border-radius: $radius-md;
+
+  background-color: $color-gray;
+
+  font-family: $font-family;
+  font-size: $font-size-lg;
+  line-height: 24px;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover:not(:disabled) {
+    border-color: $color-blue-light;
+  }
+
+  &:focus {
+    border-color: $color-blue-light;
+    background-color: $color-background;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-blue-light;
+  }
+
+  &:disabled {
+    background-color: $color-background;
+    color: $color-text-placeholder;
+    cursor: not-allowed;
+  }
+
+  option {
+    background-color: $color-background;
+    color: $color-text;
+  }
+}
+
+.placeholder {
+  color: $color-text-placeholder;
+}
+
+.filled {
+  color: $color-text;
+  background-color: $color-background;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+
+  width: 16px;
+  height: 16px;
+
+  transform: translateY(-50%);
+
+  color: $color-blue;
+
+  pointer-events: none;
+}
+
+.message {
+  font-size: $font-size-sm;
+  line-height: 16px;
+  color: $color-text-secondary;
+}
+
+.wrapper:focus-within:not(.error) {
+  .label {
+    color: $color-blue;
+  }
+}
+
+.error {
+  .select {
+    border-color: $color-pink;
+
+    &:hover,
+    &:focus {
+      border-color: $color-pink;
+    }
+
+    &:focus-visible {
+      outline-color: $color-pink;
+    }
+  }
+
+  .message {
+    color: $color-pink;
+  }
+}
+
+.disabled {
+  .label,
+  .required,
+  .arrow {
+    color: $color-text-placeholder;
+  }
+}

@@ -1,0 +1,56 @@
+@use '../../styles/variables' as *;
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+
+  margin-top: $spacing-xl;
+}
+
+.title {
+  padding: 0 40px;
+
+  font-size: $heading-32;
+  font-weight: $font-weight-semibold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-lg;
+
+  padding: 40px;
+
+  background-color: $color-white;
+  border-radius: $radius-md;
+}
+
+.contactFields {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: $spacing-xl;
+
+  width: 592px;
+  max-width: 100%;
+
+  align-items: start;
+}
+
+.deliveryOptions {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xl;
+}
+
+.addressField {
+  width: 592px;
+  max-width: 100%;
+}
+
+.error {
+  font-size: $font-size-md;
+  color: $color-pink-dark;
+}

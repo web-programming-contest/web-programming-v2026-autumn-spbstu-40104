@@ -1,0 +1,47 @@
+@use '../../styles/variables' as *;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+
+  button {
+    min-width: 36px;
+    height: 36px;
+
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    background: $color-white;
+    color: $color-blue;
+
+    font: inherit;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+      border-color: $color-blue;
+    }
+
+    &:disabled {
+      color: $color-text-placeholder;
+      cursor: default;
+    }
+
+    &.active {
+      background: $color-blue;
+      color: $color-white;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dots {
+  color: $color-text-muted;
+}
